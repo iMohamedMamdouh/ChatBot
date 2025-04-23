@@ -1,14 +1,13 @@
+import 'package:chatbot/chat/presentation/chat_screen.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(ChatBot());
-}
+void main() => runApp(ChatApp());
 
-class ChatBot extends StatelessWidget {
-  const ChatBot({super.key});
+class ChatApp extends StatelessWidget {
+  const ChatApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(home: ChatScreen(), debugShowCheckedModeBanner: false);
   }
 }
